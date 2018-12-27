@@ -16,6 +16,12 @@
     "access": "public"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "mocha __tests__/*"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "bignumber.js": "^8.0.1"
   }
 }
