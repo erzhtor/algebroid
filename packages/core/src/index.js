@@ -1,14 +1,14 @@
 'use strict';
-const stringToPostfix = require('./expression-parser');
-const calculatePostfix = require('./calculate-postfix');
+const Parser = require('./parser');
+const Calculator = require('./calculator');
 
 /**
- * Calculates string mathematical expression
+ * Calculates math string expression
  * @param {string} expression 
- * @returns {string | number} result of the expression
+ * @returns {string} result of the expression
  */
-function calculate(expression) {
-    return calculatePostfix(stringToPostfix(expression));
-}
-
-exports.calculate = calculate;
+exports.calculate = function calculate(expression) {
+    const parser = new Parser(expression);
+    const calculator = new Calculator(parser.parse());
+    return calculator.calculate();
+};
