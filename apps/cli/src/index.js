@@ -1,7 +1,13 @@
 'use strict';
+const program = require('commander');
+const {calculate} = require('@algebra/core');
+const packageJson = require('../package.json');
 
-module.exports = cli;
+program
+    .version(packageJson.version)
+    .arguments('<expression>')
+    .action(function(expression) {
+        console.log(calculate(expression));
+    });
 
-function cli() {
-    // TODO
-}
+program.parse(process.argv);

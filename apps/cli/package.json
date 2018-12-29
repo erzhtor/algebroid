@@ -17,6 +17,12 @@
     "access": "public"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "lint": "eslint src/**/*",
+    "start": "node src"
+  },
+  "dependencies": {
+    "@algebra/core": "^0.1.0",
+    "commander": "^2.19.0"
   }
 }
