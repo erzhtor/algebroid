@@ -1,5 +1,5 @@
 'use strict';
-const stringToPostfix = require('./string-to-postfix');
+const stringToPostfix = require('./expression-parser');
 const calculatePostfix = require('./calculate-postfix');
 
 /**

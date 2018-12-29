@@ -1,71 +1,38 @@
-"use strict";
-const BigNumber = require("bignumber.js");
+'use strict';
+const BigNumber = require('bignumber.js');
+const OPERATORS = require('./operators');
 
-module.exports = calculatePostfix;
+BigNumber.config({ EXPONENTIAL_AT: 1000 });
 
 /**
- * Calculates postfix notated expression
+ * Calculates postfix notated expression tokens
  * @param {string[]} tokens
  * @param {string} result
  */
-function calculatePostfix(tokens) {
-  const operandStack = [];
-  let token = tokens.shift();
+module.exports = function calculatePostfix(tokens) {
+    const operandStack = [];
+    let token = tokens.shift();
 
-  function calculate(operator) {
-    const secondOperand = operandStack.pop();
-    const firstOperand = operandStack.pop();
-    switch (operator) {
-      case "/":
-        operandStack.push(
-          new BigNumber(firstOperand).div(new BigNumber(secondOperand))
-        );
-        break;
-      case "*":
-        operandStack.push(
-          new BigNumber(firstOperand).times(new BigNumber(secondOperand))
-        );
-        break;
-      case "-":
-        operandStack.push(
-          new BigNumber(firstOperand).minus(new BigNumber(secondOperand))
-        );
-        break;
-      case "+":
-        operandStack.push(
-          new BigNumber(firstOperand).plus(new BigNumber(secondOperand))
-        );
-        break;
-      case "%":
-        operandStack.push(
-          new BigNumber(firstOperand).mod(new BigNumber(secondOperand))
-        );
-        break;
-    case "^":
-        operandStack.push(
-          new BigNumber(firstOperand).pow(new BigNumber(secondOperand))
-        );
-        break;
-      default:
-        throw Error(`Unknown operator: {operator}`);
+    while (token) {
+        const operator = OPERATORS.find(item => item.symbol === token);
+        if (operator) {
+            const secondOperand = operandStack.pop();
+            const firstOperand = operandStack.pop();
+            operandStack.push(operator.calculate(firstOperand, secondOperand));
+        } else {
+            const value = new BigNumber(token);
+            if (!value.isNaN()) {
+                operandStack.push(value);
+            } else {
+                throw new Error(`Unknown token: ${token}`);
+            }
+        }
+        token = tokens.shift();
     }
-  }
 
-  while (token) {
-    if (["/", "*", "-", "+", "%", "^"].includes(token)) {
-      calculate(token);
-    } else {
-      const value = new BigNumber(token);
-      if (value.isNaN()) {
-        throw new Error(`Operand "${token}" is NOT a number`);
-      }
-      operandStack.push(value);
+    if (operandStack.length !== 1) {
+        throw Error('Incorrect expression');
     }
-    token = tokens.shift();
-  }
-  const result = operandStack.pop();
 
-  BigNumber.config({ EXPONENTIAL_AT: 1000 })
-
-  return result.toString();
-}
+    return operandStack.pop();
+};
