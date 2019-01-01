@@ -12,3 +12,6 @@ exports.calculate = function calculate(expression) {
     const calculator = new Calculator(parser.parse());
     return calculator.calculate();
 };
+
+exports.Calculator = Calculator;
+exports.Parser = Parser;
