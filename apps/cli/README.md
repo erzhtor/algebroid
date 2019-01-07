@@ -1,11 +1,18 @@
-# `@algebra/cli`
+# @algebroid/cli
 
-> TODO: description
+command line utility for calculating math expressions.
+- supports large numbers.
+- supported operators: `+` `-` `*` `/` `%` `^`
 
 ## Usage
 
+### Install
+`npm i @algebroid/cli`
+### Run
 ```
-const cli = require('@algebra/cli');
+# check version
+@algebroid/cli --version
 
-// TODO: DEMONSTRATE API
+# calculate
+@algebroid/cli "12 ^ 12 + 4 - ( 80 % 43 )"
 ```
