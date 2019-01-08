@@ -1,13 +1,13 @@
 {
   "main.css": "/algebroid/static/css/main.50f6eec8.chunk.css",
-  "main.js": "/algebroid/static/js/main.f1b22e4f.chunk.js",
-  "main.js.map": "/algebroid/static/js/main.f1b22e4f.chunk.js.map",
+  "main.js": "/algebroid/static/js/main.13e2f98a.chunk.js",
+  "main.js.map": "/algebroid/static/js/main.13e2f98a.chunk.js.map",
   "static/js/1.3cd8b00f.chunk.js": "/algebroid/static/js/1.3cd8b00f.chunk.js",
   "static/js/1.3cd8b00f.chunk.js.map": "/algebroid/static/js/1.3cd8b00f.chunk.js.map",
   "runtime~main.js": "/algebroid/static/js/runtime~main.a2749ab8.js",
   "runtime~main.js.map": "/algebroid/static/js/runtime~main.a2749ab8.js.map",
   "static/css/main.50f6eec8.chunk.css.map": "/algebroid/static/css/main.50f6eec8.chunk.css.map",
   "index.html": "/algebroid/index.html",
-  "precache-manifest.56922bad3340b4896fe0b57c583b4066.js": "/algebroid/precache-manifest.56922bad3340b4896fe0b57c583b4066.js",
+  "precache-manifest.7f09793f7f60fb29f42279e692b3dbfb.js": "/algebroid/precache-manifest.7f09793f7f60fb29f42279e692b3dbfb.js",
   "service-worker.js": "/algebroid/service-worker.js"
 }
