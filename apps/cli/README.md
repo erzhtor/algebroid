@@ -1,6 +1,6 @@
 # @algebroid/cli
 
-command line utility for calculating math expressions.
+Command line utility for calculating math expressions.
 - supports large numbers.
 - supported operators: `+` `-` `*` `/` `%` `^`
 

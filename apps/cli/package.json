@@ -1,18 +1,21 @@
 {
   "name": "@algebroid/cli",
   "version": "0.1.0",
-  "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
+  "description": "Command line utility for calculating math expressions.",
   "keywords": [],
   "author": "Erzhan Torokulov <erzhan.torokulov@gmail.com>",
   "license": "ISC",
-  "main": "lib/cli.js",
+  "main": "src/index.js",
   "directories": {
-    "lib": "lib",
+    "src": "src",
     "test": "__tests__"
   },
   "files": [
     "lib"
   ],
+  "bin": {
+      "algebroid": "src/index.js"
+  },
   "publishConfig": {
     "access": "public"
   },

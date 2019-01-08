@@ -10,4 +10,8 @@ program
         console.log(calculate(expression));
     });
 
+program.on('--help', function() {
+    console.log('');
+    console.log('Example: @algebroid "12 + 12 ^ 76 - 12"');
+});
 program.parse(process.argv);
