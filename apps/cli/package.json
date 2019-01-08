@@ -1,6 +1,6 @@
 {
   "name": "@algebroid/cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Command line utility for calculating math expressions.",
   "keywords": [],
   "author": "Erzhan Torokulov <erzhan.torokulov@gmail.com>",
