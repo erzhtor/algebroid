@@ -4,15 +4,16 @@ JavaScript Library for:
 - Calculating postfix notation.
 - Or all at once: calculating string math expression.
 
+
+## Get Started
 Supports:
 - large numbers.
 - Operators: `+` `-` `/` `*` `%` `^`.
 
-## Usage
-Install:
+### Install:
 `npm i @algebroid/core --save`
 
-Use:
+### Usage:
 ```js
 const {calculate} = require('@algebroid/core');
 const result = calculate("123 + 222 - ( 23 * 45 / 3 ) + 2 ^ 32");

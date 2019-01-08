@@ -7,7 +7,7 @@ command line utility for calculating math expressions.
 ## Usage
 
 ### Install
-`npm i @algebroid/cli`
+`npm i -g @algebroid/cli`
 ### Run
 ```
 # check version
