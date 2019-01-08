@@ -11,8 +11,8 @@ Command line utility for calculating math expressions.
 ### Run
 ```
 # check version
-@algebroid/cli --version
+algebroid --version
 
 # calculate
-@algebroid/cli "12 ^ 12 + 4 - ( 80 % 43 )"
+algebroid "12 ^ 12 + 4 - ( 80 % 43 )"
 ```
