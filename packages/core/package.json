@@ -6,11 +6,11 @@
   "license": "ISC",
   "main": "src/index.js",
   "directories": {
-    "src": "src",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "src",
+    "README.md"
   ],
   "publishConfig": {
     "access": "public"
