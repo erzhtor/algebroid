@@ -1,6 +1,3 @@
-#!/usr/bin/env node
-
-'use strict';
 const program = require('commander');
 const {calculate} = require('@algebroid/core');
 const packageJson = require('../package.json');

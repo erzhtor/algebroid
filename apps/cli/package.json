@@ -14,7 +14,7 @@
     "lib"
   ],
   "bin": {
-    "algebroid": "src/index.js"
+    "algebroid": "./bin/algebroid"
   },
   "publishConfig": {
     "access": "public"
