@@ -30,7 +30,7 @@ class App extends Component {
         const { expression, result, postfixTokens, error } = this.state;
         return (
             <div className="App">
-                <a href="#" className="github-link">
+                <a href="https://github.com/erzhtor/algebroid" className="github-link">
                     Github
                 </a>
                 <AppHeader />
