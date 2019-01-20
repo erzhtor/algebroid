@@ -1,6 +1,6 @@
 {
     "name": "@algebroid/frontend",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "private": true,
     "homepage": "http://erzhtor.github.io/algebroid",
     "repository": {
@@ -8,7 +8,7 @@
         "url": "https://github.com/erzhtor/algebroid.git"
     },
     "dependencies": {
-        "@algebroid/core": "^0.1.7",
+        "@algebroid/core": "^0.1.8",
         "react": "^16.7.0",
         "react-dom": "^16.7.0",
         "react-scripts": "2.1.2"
