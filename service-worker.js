@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/algebroid/precache-manifest.ab702f4a803672b8c5a287bad4d2ce99.js"
+  "/algebroid/precache-manifest.daa79dddf972e9bf8edd858f6bc457d6.js"
 );
 
 workbox.clientsClaim();
