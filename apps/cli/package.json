@@ -6,6 +6,11 @@
   "author": "Erzhan Torokulov <erzhan.torokulov@gmail.com>",
   "license": "ISC",
   "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erzhtor/algebroid.git"
+  },
+  "homepage": "https://github.com/erzhtor/algebroid/tree/master/apps/cli",
   "directories": {
     "test": "__tests__"
   },
