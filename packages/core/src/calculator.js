@@ -2,7 +2,6 @@
 const BigNumber = require('bignumber.js');
 const OPERATORS = require('./operators');
 
-BigNumber.config({ EXPONENTIAL_AT: 1000 });
 
 /**
  * Calculates postfix notation expression
@@ -11,7 +10,8 @@ module.exports = class Calculator {
     /**
      * @param {string[]} tokens postfix notation tokens
      */
-    constructor(tokens) {
+    constructor(tokens, EXPONENTIAL_AT = 1000000) {
+        BigNumber.config({ EXPONENTIAL_AT });
         this._tokens = tokens;
         this._operands = [];
     }

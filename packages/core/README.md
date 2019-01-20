@@ -39,8 +39,12 @@ Example:
     const postfix = parser.parse();
     ```
 
-- **`Calculator`**: class. `constructor(postfixTokens: string[])`. Calculates postfix notated tokens.
-Methods:
+- **`Calculator`**: class. Calculates postfix notated tokens.
+Constructor:
+    - `constructor(postfixTokens: string[], EXPONENTIAL_AT = 1000000)`. 
+        - `postfixTokens: string[]`: array of numbers\operators. Example: `['12', '23', '+']`
+        - `EXPONENTIAL_AT: number = 1000000`. **optional**. Length of result at which result would be presented using exponential.
+    Methods:
     - `calculate(): string`. calculates and returns result
 *Example*:
     ```js
